@@ -1,0 +1,102 @@
+# 91 refazendo
+"""dados = dict()
+dados = {'nome': 'Pedro', 'idade': 25}
+dados['sexo'] = 'M'
+print(dados)
+print(dados.values())
+print(dados.keys())
+print(dados.items())
+for k, v in dados.items():
+    print(f'{k}: {v}')"""
+from random import randint
+
+"""numeros = {'banana': 3, 'Abacate': 4, 'Goiaba': 6}
+print(sorted(numeros.values()))"""
+
+"""def soma(a, b):  # se pos dos parametros tem que passar dois parametros
+    print(f'A = {a} B = {b}')
+    print(a + b)
+
+
+# Principal
+soma(4, 5)
+soma(b=8, a=9)  # explicitando que é a e b, tbm n pode só explicitar um parametro
+soma(2, 1)"""
+
+"""def contador(*num):  # tupla
+    tam = len(num)
+    print(f'Recebi os valores {num} e eles são {tam} numeros!')
+
+
+contador(2, 1, 7)  empacotando valores
+contador(8, 0)
+contador(4, 4, 7, 6, 2)"""
+
+""""def dobra(list):
+    for p, v in enumerate(list):
+        list[p] += list[p]
+    print(list)
+
+
+val = [7, 2, 5, 0, 4]
+print(f'Lista original {val}')
+dobra(val )
+print(val)"""
+
+"""
+def somavarios(*v):
+    s = 0
+    for c in v:
+        s += c
+    print(f'A soma de {v} é {s}')
+
+
+somavarios(3, 5, 6)
+somavarios(3, 2)"""
+
+
+"""
+def contador(i, f, p):
+
+    -> Faz uma contagem e mostra na tela  # dock string
+    -> i inicio da contagem
+    -> f fim fa contagem
+    -> p passo da contagem
+
+    while i <= f:
+        print(f'{i} ', end='')
+        i += p
+    print('FIM!')
+
+
+contador(0, 100, 10)
+help(contador)"""
+
+
+def soma(a=0, b=0, c=0):  # parametros opcionais, ultiliza o parametro do lado, caso n receba nd
+    s = a + b + c
+    print(f'A soma vale {s}')
+
+
+soma()
+
+"""
+# Variavel global e local
+def fun():
+    global n1  # pra n acontecer isso
+    n1 = 4  # se so declarar assim ele vai criar outra variavel n1 so que local
+    print(f'N1 dentro vale {n1}')
+
+
+n1 = 2
+fun()
+print(f'N1 global vale {n1}')"""
+
+
+"""# retorne de valores def
+def soma(a=0, b=0, c=0):
+    s = a + b + c
+    return s
+
+
+print(f'As somas valem {soma(2, 3, 5)} ')"""

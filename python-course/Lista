@@ -1,0 +1,30 @@
+"""num = [2, 5, 9, 1, 2]
+num[2] = 89
+num[3] = 56  # troca o objeto
+
+# num.append(77) adiciona um novo ojeto
+
+# num.insert(0, 6) adiciona um objeto com posicao escolhida
+
+# num.pop(0)  # remove um objeto da lista com posicao desejada
+num.remove(2) # remove o primeiro objeto que aparecer -->>
+
+valores = list()
+valores.append(4)
+valores.append(3)
+valores.append(6)
+
+for cont in range(0, 5):  # mesmo jeito de forma automatica
+    valores.append(int(input('Digite um valor:')))
+for c, v in enumerate(valores):
+    print(f'{v}, posicao {c}')
+
+a = [2, 3, 4, 7]
+# b = a faz uma ligacao entre as listas
+# b = a[:]
+b = copy.copy(a)  # utro jeito de fazer uma copia de uma lista, agr n tem ligacao
+b[2] = 8
+print(f'Lista A:{a}')
+print(f'Lista B:{b}')
+
+if 5 in valores, nao if valores in 5:"""

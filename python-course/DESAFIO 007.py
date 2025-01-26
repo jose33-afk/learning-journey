@@ -1,0 +1,5 @@
+nome = input('\033[32mDigite o nome do aluno:').capitalize()
+print('\033[34m=\033[m'*30)
+nota1 = float(input(f'\033[36mDigite a primeira nota de \033[33m{nome}: '))
+nota2 = float(input(f'\033[36mDigite a segunda nota de \033[33m{nome}: '))
+print(f'\033[36mA media de \033[33m{nome}\033[36m foi \033[31m{(nota1+nota2)/2}')

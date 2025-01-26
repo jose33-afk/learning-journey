@@ -1,0 +1,15 @@
+#print(f'{lista:30}'), escreve usando 30 espaços
+#lista               . sem o ponto so pramostrar q é um espaço
+#print(f'{Lista:.<30}') escreve usando 30 espaços alinados a < com espaço preenchido com .
+#lista.....................
+#print(f'{lista:>10}') escreve com 10 espaços e o conteudo da varivel fica no final
+#              lista
+#print(f'{"Lista":^40}') escreve com 40 espaços e centralizada no meio
+#            Lista            .
+
+#Outro exemplo:
+#print(f'[ {matriz[b1][b2]:^5} ]', end='')
+#[   1   ][   2   ][   3   ]
+
+#print(f'{f"Na palavra {palavras[i]} temos":30}', end=' ')
+#Na palavra aprender temos      a e e  funciona assim tbm
