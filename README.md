@@ -2,20 +2,20 @@ ________________________________________________________________________________
 
 # 🌱 learning-journey
 
-**🚀 Bem-vindo à minha jornada de aprendizado!**  
-Este repositório mostra meu progresso enquanto navego por diversos cursos de programação, incluindo:
+**🚀 Welcome to my learning journey!**  
+This repository showcases my progress as I navigate through various coding courses, featuring:
 
-- 💻 Projetos que eu criei.  
-- 📝 Exercícios e desafios.  
-- 🔬 Experimentos e explorações.  
+- 💻 Projects I've built.  
+- 📝 Exercises and challenges.  
+- 🔬 Experiments and explorations.  
 
-## 🛠️ Tecnologias  
-Aqui estão algumas das tecnologias e linguagens que você encontrará neste repositório:  
+## 🛠️ Technologies  
+Here are some of the technologies and languages you'll find in this repository:  
 - Python 🐍  
 - JavaScript 🌐  
 - C++ 💾  
 - HTML/CSS 🎨  
 
-## 📜 Licença  
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+## 📜 License  
+This project is licensed under the [MIT License](LICENSE).
 ______________________________________________________________________________________________________
