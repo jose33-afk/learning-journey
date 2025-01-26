@@ -1,6 +1,6 @@
 # 📚 Python - Complete Course (Curso em Vídeo)
 
-This repository contains the codes and projects I developed during the Python course from **Curso em Vídeo**. The course covers basic concepts to more advanced topics, providing a solid understanding of the Python language.
+This directory contains the codes and projects I developed during the Python course from **Curso em Vídeo**. The course covers basic concepts to more advanced topics, providing a solid understanding of the Python language.
 
 ## 🔍 What I learned:
 - **Basic syntax**: Variables, operators, data types, and control flow.
