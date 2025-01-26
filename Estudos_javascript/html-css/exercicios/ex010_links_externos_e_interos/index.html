@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon_gojo2.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1> <!-- Vai apontar pra sites que não são meus-->
+    <p>você pode acessar meu repositorio no<a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external"> GitHub</a></p> <!--a de ancora, href=link do site externo(URL), quando o site não for meu o ideal é abrir em outra aba-->
+    <p>Você também pode acessar o meu canal gratuido no <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external">youtube</a></p> <!-- target, pro link do site não sobrepor o meu, e sim abrir uma nova guia-->
+    <h1>Usando links internos</h2> <!--é pra enviar pra outras paginas, dentro do nosso site-->
+    <p>Está é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next"> segunda página.</a></p> <!--Se a pagina estiver no local, nao precisa por UTL, mais se nao tem q por o http-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" hreflang="pt-br" target="_self" rel="next">página de notícias</a></p> <!--_self, quando a pagina for no proprio site, funcina sem, mas acho q é melhor por, por causa do google-->
+    <!--Tag hreflang, indica qual é o idioma principal do site q vai o link, pra traduzir automaticamente(no caso o navegador)-->
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download target="_blank" rel="next">Baixar o livro em PDF</a></li><!-- esse # significa vazio-->  <!--o type nao é obrigatorio, mas acho q é bom pro google, por algum motivo n ta funcionando :/-->
+        <li><a href="livro/10 - Ligações em toda parte.rar" download="meu_livro" type="application/x-rar-compressed">Livro compactado em .RAR</a></li> <!--so precisa por o download, nao precisa por o ="(nome_do_arquivo)", se so por o download, ele usa o nome original do arquivo-->
+    </ul>
+</body> 
+</html>
+
+<!--target === _blank vai abrir o link em uma nova janela em branco
+ _self vai abrir o link na janela ou frame atual (padrão)
+-->
+
+<!-- rel=""
+next indica que o link é para a próxima parte do documento atual
+prev indica que o link é para a parte anterior do documento atual
+author indica que é um link para o site do autor do artigo atual
+external indica que é um link para outro site que não faz parte do site-->
+
+<!--O atributo rel="external" por si só não tem um comportamento nativo nos navegadores. Ele é mais útil para indicar intenção semântica ou quando usado em conjunto com outros recursos, como scripts ou estilos.-->
