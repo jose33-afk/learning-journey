@@ -1,0 +1,15 @@
+n = int(input('Tabuada do ?'))
+c = {'v':'\033[32m', 'verm':'\033[31m', 'b':'\033[97m'}
+print('\033[31m=' * 16)
+print(f'{c["verm"]}|  {n} {c["b"]}x {c["verm"]}1 {c["b"]}= {c["v"]}{n*1}{c["verm"]}   |')
+print(f'{c["verm"]}|  {n} {c["b"]}x {c["verm"]}2 {c["b"]}= {c["v"]}{n*2}{c["verm"]}   |')
+print(f'{c["verm"]}|  {n} {c["b"]}x {c["verm"]}3 {c["b"]}= {c["v"]}{n*3}{c["verm"]}  |')
+print(f'{c["verm"]}|  {n} {c["b"]}x {c["verm"]}4 {c["b"]}= {c["v"]}{n*4}{c["verm"]}  |')
+print(f'{c["verm"]}|  {n} {c["b"]}x {c["verm"]}5 {c["b"]}= {c["v"]}{n*5}{c["verm"]}  |')
+print(f'{c["verm"]}|  {n} {c["b"]}x {c["verm"]}6 {c["b"]}= {c["v"]}{n*6}{c["verm"]}  |')
+print(f'{c["verm"]}|  {n} {c["b"]}x {c["verm"]}7 {c["b"]}= {c["v"]}{n*7}{c["verm"]}  |')
+print(f'{c["verm"]}|  {n} {c["b"]}x {c["verm"]}8 {c["b"]}= {c["v"]}{n*8}{c["verm"]}  |')
+print(f'{c["verm"]}|  {n} {c["b"]}x {c["verm"]}9 {c["b"]}= {c["v"]}{n*9}{c["verm"]}  |')
+print(f'{c["verm"]}|  {n} {c["b"]}x {c["verm"]}10 {c["b"]}= {c["v"]}{n*10}{c["verm"]} |')
+print('\033[31m=' * 16)
+

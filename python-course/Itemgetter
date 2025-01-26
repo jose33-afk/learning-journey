@@ -1,0 +1,43 @@
+
+"""O itemgetter(1) não está limitado apenas a números; ele pode ser usado para ordenar qualquer tipo de dado que esteja na posição indicada.
+ Aqui está uma explicação detalhada:
+
+O que é itemgetter(1)?
+
+itemgetter(1) é uma função que acessa o segundo item de uma sequência, como uma tupla ou uma lista.
+O número 1 representa o índice do item que queremos acessar, com base em uma indexação que começa do zero.
+Como funciona na prática?
+
+Suponha que você tenha uma lista de tuplas, onde cada tupla tem dois elementos: uma chave e um valor.
+Se você usar itemgetter(1) como chave de ordenação, a lista será organizada com base no segundo elemento de cada tupla (o valor).
+Exemplo com números:
+
+python
+Copiar código
+from operator import itemgetter
+dicionario = {'a': 3, 'b': 1, 'c': 2}
+lista = sorted(dicionario.items(), key=itemgetter(1))
+print(lista)
+Saída:
+
+css
+Copiar código
+[('b', 1), ('c', 2), ('a', 3)]
+Aqui, a lista foi ordenada pelos valores (números) em ordem crescente.
+
+Exemplo com strings:
+
+python
+Copiar código
+dicionario = {'a': 'banana', 'b': 'apple', 'c': 'cherry'}
+lista = sorted(dicionario.items(), key=itemgetter(1))
+print(lista)
+Saída:
+
+css
+Copiar código
+[('b', 'apple'), ('a', 'banana'), ('c', 'cherry')]
+Neste caso, a lista foi ordenada pelas strings (valores) em ordem alfabética.
+
+Resumo: O itemgetter(1) é usado para extrair e ordenar com base no segundo item de cada tupla ou sequência. O tipo de dado dos valores (seja número, string,
+ ou outro tipo) não afeta a função em si; a ordenação será feita de acordo com a ordem natural dos valores."""

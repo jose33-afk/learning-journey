@@ -1,0 +1,23 @@
+"""pessoas = {'nome': 'Gustavo', 'Sexo': 'M, S', 'idade': 22}
+
+print(f'{pessoas["nome"]} tem {pessoas['idade']} anos')
+
+print(pessoas.keys())  # mostra as chaves nome sexo e idade
+
+print(pessoas.values())  # mostra os elementos, gustavo m e 22
+
+print(pessoas.items())  # mostra tudo 'nome' gustavo sexo m
+
+pessoas['peso'] = 82.3  # n precisa usar append em dicionario ele adiciona assim e em
+
+# tupla lembrendo é imutavel dps q adiciona um valors pela primeira vez
+
+for k, v in pessoas.items():  # primeria variavel é keys, segunda é values
+//Seria o enumereit nas listas e tuplas
+    print(k, v)
+
+aluno['situacao'] = 'Aprovado' if aluno['media'] >= 6 else 'Reprovado' #  if em uma linha
+
+del dados['idade'] remove o elemento
+
+dados.clear() # apaga todos os elementos."""
