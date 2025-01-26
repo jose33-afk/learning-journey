@@ -13,7 +13,7 @@ This repository showcases my progress as I navigate through various coding cours
 Here are some of the technologies and languages you'll find in this repository:  
 - Python 🐍  
 - JavaScript 🌐  
-- C++ 💾  
+- C 💾  
 - HTML/CSS 🎨  
 
 ## 📜 License  
