@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_gojo2.ico" type="image/x-icon">
+    <style>
+        ol {
+            list-style-type: 1;
+        }
+        ul {
+            list-style-type: circle;  
+        }
+    </style>
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2> <!--Listas que a ordem é muito importante, por exemplo um passo a passo de como fazer um bolo, um lista de aprovados no vestigular-->
+    <ol> <!-- so por o type e ele ja mostra os tipos de personalizaçao|| se no lugar do 1 por 4 pra lista começar, n funciona! tem que por start="(numero desejado)"-->
+        <li>Acordar</li> <!-- Não é igual ao <pre>, mas tem um espaço de tab-->
+        <li>Tomar café</li>  <!-- é opcional fechar o li-->
+        <li>Escovar os dentes</li>
+        <li>trabalhar</li>
+        <li>Tomar banho</li>  <!-- atalho muito bom (comando)li*7(quantidade de vezes q quer)-->
+    </ol> <!--ol(ordered lists)listas ordenadas-->
+    <!-- 1 listas de 1,2,3
+     A em ordem alfabetica
+     a alfabetica so q minusculas
+     I numeros romanos 
+     i minusculos-->
+    <h2>Listas não ordenadas</h2> <!-- uma ol, só que essa os itens não tem classificaçao-->
+    <h3>Lista de compras</h3>
+    <ul> <!--La em cima, Três type, circle, uma bolinha, disc, uma boinha preta, e o quadrado preto, square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijao</li>
+    </ul> <!--unordered lists(Listas não ordenadas)-->
+    <h2>Juntando listas versão 1.0</h2>
+    <h3>Minhas linguagens favoritas</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li> <!-- pra mudar varios comandos de uma vez selecine com mouse segurado At-->
+        <ol type="a" start="5">  <!-- start é um parametro numerico, entao msm q seja abc, tem que por 4 e nao d--> 
+            <li>PHP</li>
+            <li>Python</li>
+            <li>Javascrip</li>
+            <li>Kotlin</li>  <!--- ir pra baixo mais rapido Ctl+ enter-->
+        </ol>
+    </ol>
+    <h2>Lista de definiçao</h2> <!-- como se fosse um dicionario, dt é o termo e dd a definiçao do msm-->
+    <dl>
+        <dt>HTML</dt><!-- DT Termo-->
+        <dd>Linguagem de marcaçao para a criaçao do conteúdo em sites.</dd><!-- DD Descriçao-->
+        <dt>CSS</dt>
+        <dd>LInguagem de marcaçao para a criaçaodo desing de um sites</dd>
+        <dt>Javascrip</dt>
+        <dd>Lingugem de programaçao para a criação de interatividade de um site</dd>
+    </dl> <!-- Curiosidade, aparentemente é a menos usada-->
+    <h2>Jogos de computador</h2>
+    <ol>
+        <li>Souls like</li>
+        <ul>
+            <li>Elden ring</li>
+            <li>Dark souls</li>
+            <li>sekiro</li>
+            <li>Back mirrior wukong</li>
+        </ul>
+        <li>Inde</li>
+        <ul>
+            <li>The last of us</li>
+            <li>Red dead Redemption</li>
+            <li>Manicraft</li>
+            <li>Terraria</li>
+            <li>Detroit: Become Human</li>
+        </ul>
+    </ol>
+</body>
+</html>
