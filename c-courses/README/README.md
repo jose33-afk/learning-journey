@@ -1,7 +1,7 @@
 ___________________________________________________________________________________________________________________________
 # 📚 C Programming - Basic Courses
 
-This repository contains the codes and projects I developed during two **basic C programming**
+This repository contains the codes and projects I developed during two **basic C programming** 
 courses that I took at **Estudo Nalta** and **Programe Seu Futuro**. 
 These courses provide a comprehensive introduction to the C programming language, 
 covering fundamental concepts and providing hands-on experience with various exercises.
