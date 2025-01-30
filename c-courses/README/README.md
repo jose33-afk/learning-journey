@@ -1,4 +1,4 @@
-___________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________
 # 📚 C Programming - Basic Courses
 
 This repository contains the codes and projects I developed during two **basic C programming** 
@@ -21,4 +21,4 @@ covering fundamental concepts and providing hands-on experience with various exe
 ## 🎯 Objective:
 To build a solid foundation in C programming, mastering the essential concepts and applying them to real-world problems. 
 **I haven't finished the C course from Programe Seu Futuro yet**, both were taken as preparation for a college exam.
-___________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________
