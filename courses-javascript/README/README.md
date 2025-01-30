@@ -19,4 +19,4 @@ laying a solid foundation for building modern and responsive websites.
 🎯 Goal:  
 To develop essential skills for creating and styling functional, responsive websites, 
 using the key web technologies to solve real-world design and interaction problems.  
-_______________________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________________________ 
