@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to left, #0a6981b2, #0542b3b4); /*degrade pra baixo ta bugado*/
+}
+
+main {
+    border-radius: 10px; /*Aredonda as pontas*/
+    background-color: white;
+    box-shadow: 5px 5px 7px #6e0234b4; /*primeiro parametro(quanto a sombra vai andar para o lado, barra lateral ->, segundo(abaixo barra pra baixo), terceiro(Quanto ela vai espalhar, ultimo(transparencia)*/
+    width: 800px;/*largura, de uma ponta a outra da letra*/
+    padding: 10px; /*Um espaço pra letras não ficar coloda com o fundo*/
+    margin: auto; /*Centraliza no meio, indepedente do tamnho da janla*/
+}
+
+h1{
+   color: #D92B7C; /*Cor das letras do h1*/
+   text-align: center;
+   text-shadow: 1px 1px 2px #50022693; /*Mesma esquema do box, não precisa por muito, so pra mostrar que tem sombra, so colocar um sombra discreta, ja basta.*/
+}
+
+h2{
+    color: #D92B7C;
+}
+
+p{
+    color: #8C0343;
+    text-align: left;
+}

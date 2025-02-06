@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif; /*Pra mexer com peso da fonte não posso usar essas fontes, ou elas são magras ou gordas;Arial, Helvetica, sans-serif
+            Comando pra controlar peso da fonte
+                font-weight:  usar pra por a fonte em negrito
+                    weight(peso), width(largura) and height(Altura);*/
+        
+            font-size: 1em;
+            font-style: italic; 
+            text-decoration: none; 
+            /*
+            Todas as configuraçoes acima, a fonte selecionada tem que suportar elas.
+                Lembrando que dá pra por essas configuraçoes no h1{} etc.
+            */
+            h1, h2{
+                text-decoration: underline; /*underline(subrilhado)*/
+                /* shorthan font (vou te dar uma maozinha) - ela vai condensar todas as configuraçoes
+                    -> font-style -> font-weight -> font-size -> fonte-family 
+                        - Dá pra omitir um, mas em ordem.
+                            
+                            font-family: monospace;
+                            font-style: normal;
+                            font-size: 32px;*/
+                
+                    font: normal 32px monospace
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste quos rerum iure nihil at minima ab ipsum veniam, fugiat laborum velit, consequatur nam quisquam quae corporis! At accusantium nostrum accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum cumque deserunt expedita sapiente ut amet, atque omnis at blanditiis provident est temporibus perferendis. Esse ad explicabo ut amet maxime.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia expedita soluta animi tenetur corporis ab similique totam iste! Ratione sunt doloremque nisi tenetur, placeat distinctio ut inventore non corrupti ipsa.</p>
+    <h2>Subtítolo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque et, consequatur sapiente, nobis architecto iure quia molestias dolores quod dolorem! Similique ipsam laudantium nulla, iure fugiat eaque? Pariatur, cum.</p>
+</body>
+</html>

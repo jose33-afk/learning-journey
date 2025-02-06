@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon_gojo2.ico" type="image/x-icon">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou
+     simplismente aumente e diminua o tamanho do seu navegador</p>
+        
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/300x300-celulars.png" type="image/png"> <!--OBS! tem que ser acima-->
+        <!-- Exibe uma imagem de 300x300 para telas com largura máxima de 750px (celulares). -->
+        <source media="(max-width: 1050px)" srcset="imagens/700x700-tabletes.png" type="image/png">
+        <!-- Exibe uma imagem de 700x700 para telas com largura máxima de 1050px (tablets). -->
+        <img src="imagens/1000x100-notebook-tvs.png" alt="imagem-flexivel"> <!--sempre pensar no usuario que ta usando, se é celular, notebook etc, pra ele visualizar a imagem-->
+        </picture>
+        <h1>Reproduzindo Áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5</p>
+        <!--<audio src="midia/poze.mp3" controls autoplay></audio>  controls, 
+        é pra controlar o audio compativel == MP3/MP4 wav OGG primeira forma-->
+        <audio preload="metadata" controls> <!-- o padrao é muito ruim, da pra por loop dps do control-->
+            <source src="midia/poze.mp3" type="audio/mpeg"> 
+            <source src="midia/poze.mp3" type="audio/ogg"> 
+            <source src="midia/poze.mp3" type="audio/wav">  <!--Evitar o arquivos wav sao muito ruins-->
+            <p>infelizmente seu navegador não consegue reproduzir o Áudio</p>
+            <!-- esse é pra audio
+            da por mais de um e de outro ftype, por exemplo se o primeiro não funcinar, ele tenta o segundo ou terceiro se tiver-->
+        </audio>
+            
+      
+</body>
+</html>
+
+<!--Exibe uma imagem padrão (fallback) para navegadores que não suportam a tag <source>. 
+Também será usada em telas maiores que 1050px
+Por 50px a mais pra folga da barra de rolagem
+
+<picture> usada para exibir diferentes versões de uma imagem dependendo das condições, como o tamanho da tela ou tipo de dispositivo.
+    
+Explicação dos atributos:
+media="(max-width: 1050px)"
+
+Define uma media query que especifica a condição para usar esta imagem.
+Neste caso, significa que esta versão da imagem será carregada se a largura da tela for menor ou igual a 1050 pixels.
+
+srcset="imagens/700x700-tabletes.png"
+
+Especifica o caminho da imagem a ser exibida quando a condição da media query for satisfeita.
+Aqui, a imagem chamada 700x700-tabletes.png, localizada na pasta imagens, será usada.
+type="image/png"
+
+Exibe uma imagem padrão (fallback) para navegadores que não suportam a tag <source>. 
+Também será usada em telas maiores que 1050px. -->
+

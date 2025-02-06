@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu proprio servidor.</p> <!-- controls == controlar os videos e audios
+    <video src="midias/video-30fps.mp4" width="600" controls></video>  primeira forma simples, width="tamanho do video visualizado no site 500px, e não reduz o tamanho do arquivo so a visualiazaçao mesmo"-->
+    <video width="560" poster="imagens/limoes-capa.png" controls loop> <!-- poster == thubannel-->
+        <source src="midias/meu-video.m4v" type="video/m4v"> <!--Primeiro o menor e depois os maiores-->
+        <source src="midias/video-30fps.mp4" type="video/mp4"> <!-- A quele mesmo esquema tenta carregar o-->
+        <source src="midias/meu-video.ogv" type="video/ogv"><!--primeiro se não der certo carrega os outros-->
+        <p>Seu navegador não tem compatibilidade com reproduçao de vídeos</p> <!--Se nao conseguir carregar
+        -->
+    </video>
+
+    <h1>Inserindo vídeos do You Tube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HWu1tz3oOqk?si=mHx5sW5KDMPOQnY2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gy-LYnQuPNs?si=zvmYNqCq5wnZTOfO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</iframe>
+<!-- se o video nao aparecer é algum probema com link, ou com navegador-->
+</body>
+</html>
+
+<!-- usar a tag video consome muita banda e vai custar mais dinheiro, só usar se o  cliente entendeu como funciona e ainda sim quer desse jeito. soluçao usar sites de hospesdagem de video, com youtube(apertar em shared incorporar e nesse codigo html, da pra configurar) usando essa tecnica nao ultiliza dados do meu servidor e sim o do youtube criar um canal meu e subir os videos la e dps so por aqui, e tomar cuido com direitos autorais e os videos todo mundo vai poder ver, entao se precisar de videos privados use os serviços vimeo-->

@@ -1,0 +1,65 @@
+Modulo - 02
+Aula - 04 
+- Harmonia de cores 
+
+   O foco do circolo cromatico é o estudo pra entender a harmonia das cores.
+        coisas importantes;
+        - simetria
+        - cores - emoçoes da cores e significado etc
+
+   Cores primarias
+      - amarelo
+      - azul 
+      - vermelho 
+
+   As cores primarias tem uma armonia meio grosseira, eles não ficam tão bonitas na tela, mas são muito importantes
+   para representar as outras cores.
+
+   Cores segundarias
+      - laranja
+      - verde 
+      - violeta
+
+   Assim como as primarias não tem tanta harmonia
+
+   As cores terciarias, são todas as outras cores que são combinaçoes das Cores segundarias e primarias.
+   Quando foi colocar o nome de uma cor terciaria, colocar primeiro o nome da cor primaria e depois o nome da cor segundaria.
+   Exemplos;
+   - amarelo-esverdiado: amarelo primaro, e verde de cor  segundaria.
+   - vermelho-alaranjado: vermelhor cor primaria, laranja cor segundaria.
+   - vermelho-arroxeado: vermelho primaria, violeta segundaria é violeta, comumente chamamos de roxo.
+   - amarelo-alaranjado
+   - azul-esverdiado
+   - azul-arroxeado
+
+   Com isso são as 12 cores do circulo cromatico
+   Temperatura de cores(Olhar no capitolo 13)
+
+   Quando for criar um site, a paleta de cores é algo muito importante, não so site, pode ser produto etc.
+   A media de cores de uma paleta é de no minimo 3 e maximo 4 ou 5.
+
+   Pra achar a peleta, primeiro vou ver qual é o meu negocio, e achar qual cor tras o sentimento e significado que eu quero passar, depois vou ver 
+   quais cores contrastam melhor entre a cor que eu escolhi.
+
+   Cores complemetares - são aquelas cores que tem mais contraste uma com a outra no circulo cromatico.
+   Por exemplo.
+   o marrom se eu quiser saber qual contrasta ele, eu vou olhar no circulo cromatico a cor oposta a ele.
+    - violeta, cor oposta: amarelo
+    - verde escuro, cor oposta: vermelho.
+
+   Cores analogas - ao contrario das cores complementares - são as cores que não tem contraste tão grande as cores vizinhas(aos lados).
+   tecnica de cores analogas e uma comprentar 
+   - cores analogas + partindo da cor principal da analoga, a cor oposta a ela.
+
+   Cores analogas relacionais.
+   Quando eu não quiser um contraste tão forte.
+   Escolho duas cores; amarelo e a do lado parecida com amarelo, depois pulo uma linha e pego o laranja, esse pular pode ser tanto pra um lado tanto para o outro.
+
+
+   Cores intercaladas - escolho como base amarelo, depois pulo uma e pego o laranja e depois pulo mais uma vez e pego o vermelho
+
+   Cores triadicas, escolho um cor como base e pulo 3 cores, depois seleciono a cor, e pulo mais tres
+
+   Cores quadrado, pulo duas em duas cores 
+
+   Monocromia - vo pegar uma cor como base - vou modificar a saturaçao e o brilho

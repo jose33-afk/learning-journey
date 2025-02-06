@@ -1,0 +1,14 @@
+ Estudo basico tipografia parte 1 - aula 09
+
+    É o estudo de como eu vou escrever coisas no papel
+        - O estudo de como desenhar as letras.
+        - Os tipos de letras assim como as cores tambem transmitem emoçoes.
+    Por exemplo quero transmitir amor com a palavra amor, qual fonte vai transmitir melhor
+        - Uma fonte estilo manicraft 
+        - Ou uma suave estilo livro antigo, letra bem suave e bonita.
+
+Parte 2 - aula 10 
+
+    Anatomia dos tipos - é como eu vo desenhar as letras(os estilos)\
+
+    - A base da autura das letras quando se vai criar uma fonte, primeiro criase a letras x, e o resto das letras seguem sua altura
