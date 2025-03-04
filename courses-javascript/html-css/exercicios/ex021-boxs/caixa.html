@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px; /*aqui tem que ser zero, senão o footer não fica 100% colado, o mesmo se aplica a outras boxs*/
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px; /*Arredondar as pontas ela tem um short border-radius: 10px 10px 10px 10px; da pra configurar os lados*/
+            box-shadow: 5px 4px  14px rgba(0, 0, 0, 0.37);    
+        }
+
+        nav{
+            background-color: rgb(29, 60, 238);
+            margin: 0px;
+            padding: 2px;
+            width: 100%;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.541);/*Dislocamento horinzontal, vertical, espalhamento, e cor da sombra*/
+            /*Essa configuraçao é basica e funciona*/
+            /*Não se muda cor desombra, só muda a transparencia. Ela tambem não pode ser solida, pode pode sim vai depeder do caso
+                Dá pra por sombra em qualquer box
+            pra criar sombras internas é so por inset na frente */
+        }
+
+        nav > a{ /*Organizar meu código assim, fica muito melhor visualmente. e provavelmente não vou ficar perdido com no teste do site.*/
+            text-decoration: none;
+            color: white;
+            font-weight: 700; /*lembrete, grossura da letra*/
+            margin: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: aqua;
+        }
+      
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer{
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            /* Ocupa toda a largura da tela */
+            /*Quando poe um pixel no padding, e ele cria um gigante;
+                isso acontece porque o navegador transforma o texto em um paragrafo, ele consiradera tambem a margin
+                por isso fica gigante.
+                Soluçao, retirar a margin*/
+        }
+        
+        footer > p {
+            margin: 0px;
+        }
+
+        /*#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50px;
+        }*/
+    </style>
+</head>
+<body>
+    <header> <!--Cabesalho--->
+        <h1>Meu site</h1>
+        <nav> <!--Menu-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--Conteúdo principal-->
+        <section id="assunto">
+            <p>Esportes Politica e Tecnologia</p>
+        </section>
+        <section id="noticias"> <!--TDC = sessão-->
+            <article> <!--TDC = Artigo-->
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tenetur et vel quis blanditiis autem suscipit fugit ex sit nulla ipsa delectus non ut asperiores, magni consectetur magnam voluptas facere!</p>
+                <aside>
+                    <p>Artico escrito por Jose silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer> <!--Rodape-->
+        Desenvolvido por jose
+    </footer>
+    <!--<div id="bola">Aqui quando eu precisar de alguma coisa-->
+
+    </div>
+</body>
+</html>
+
+<!--Um rodapé (ou footer) em um site é a seção localizada na parte inferior da página, geralmente contendo informações adicionais ou links úteis. Ele é criado com a tag <footer> no HTML.
+
+O que pode ter em um rodapé?
+Direitos autorais (Copyright).
+Links para páginas importantes (Sobre, Contato, Política de Privacidade, etc.).
+Ícones de redes sociais.
+Informações de contato (e-mail, telefone, endereço).
+Links rápidos para navegaçã-->
+
+
+<!--Sim, se você usar width: 100%, o elemento ocupará 100% da largura do elemento pai (o container onde ele está).
+
+Se quiser que ele ocupe 100% da tela, independente do pai, use width: 100vw (100% da largura da janela do navegador).-->
+
+
+<!--No meu computador no Chrome o Devtools não aparece os três pontinhos que aparece aquelas opções, apenas o "+".
+Reply
+
+coloca o box-shadow no vscode, aí no devtools vai aparecer um quadradinho pra alterar.
+.-->

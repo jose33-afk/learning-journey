@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{ /*display:block*/
+            /*display: inline; Eu consigo tranformar um box-block em inline*/
+            background-color: rgba(255, 255, 0, 0.233);
+            
+            height: 300px; /*Altura e largura do conteudo, e consequentimente da caixa*/
+            width: 300px; /*Esses dois são chamados de size, por exemplo background-size.*/
+            
+            border-width: 10px; /*largura da borda*/
+            border-style: solid;
+            border-color: darkseagreen;
+
+            /*simplificaçao border: 10px solid darkseagreen*/
+            
+            padding-top: 10px; /*cima*/
+            padding-right: 10px; /*lados*/
+            padding-bottom: 10px; /*baixo*/
+            padding-left: 10px; /*lados*/
+            
+            /*padding: 10px 10px 10px 10px, nesse ordem de baixo.
+                Se as quatro medidas forem iguais basta por:
+                   padding:10px 
+                
+                Também posso só colocar dois valores
+                    padding:10px 20px 
+                ordem:primera é cima e em baixo, segunda laterais.
+
+            ordem: cima, direita,  baixo e esquerda*/
+
+            margin: 10px auto 10px auto; /*Assim fica centralizada a margin e eu consigo manipular em cima e em baixo, centraliza a caixa no meio*/
+
+            /*Só centralizar no meio sem fazer o cima e em baixo, basta por margin:auto;*/
+
+            /*Nao recomendavel pra centralizar o conteudo e tals, usar margin: auto; pra isso
+            se for uma caixa, se for um texto usar text-aline center*/
+
+            outline-width: 5px;  /*ele é um linha dentro da margem logo apos o border*/
+            outline-style: dashed;
+            outline-color: black;
+
+            /*ORDEM:width, style e color*/
+            /*outiline: 5px dashed black*/
+        }   
+
+        a{ /*display:inline*/
+            display: block; /*tambem posso fazer o contrario :)*/
+            border: 10px solid blue;
+            padding: 10px;
+            margin-top: 10px; /*Nao da pra fazer isso, parece que os box-inline estao limitados, nesse exemplo ao paragrafo, se mudar o display da*/
+            margin-bottom: 10px;
+        }
+
+        p{
+            margin-top: 30px; /*Da somente assim, ja que eu aumento a margem que o a esta*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a> vamos ver como isso tudo funciona</p>
+    
+</body>
+</html>
+
+
+<!--
+    User agent == é o navegador 
+
+    display: block; == block significa que o elemento é do tipo box-level
+  
+    Descriçao de uma caixa, graficamente  no inspesionar do navegador.
+
+    margin
+        border
+            padding
+                conteudo
+            padding
+        border
+    margin
+
+    box-inline, não tem altura e largura.
+
+    aparentemente, não da pra por estilo no padding
+
+    Momento de configurar a margin;
+        quando ela está tocando em outra caixa, e eu não quero q isso aconteça
+-->

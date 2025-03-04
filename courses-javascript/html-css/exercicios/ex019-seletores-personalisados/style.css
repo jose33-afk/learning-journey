@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/*
+    Em HTML é id == em CSS é # (só pode um elemento) POR DOCUMENTO HTLM, EM OUTRA PAGINA POSSO TER O MSM ID. 
+    Em HTML é class == em CSS é . (pode varios elementos)
+*/
+
+body{
+    font: 300 16px Arial, serif;
+    background-image: linear-gradient(to right, #B0FFF8, #B0FFDD);
+    
+}
+h1{
+    color: #165750;
+    background-color: #0cac9cb0;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#principal { /*Tudo que tiver id == principal vai ser afetado idepedente se for p ou h1*/
+    color:  white;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #087c71;
+}
+
+.segh1 {  
+    width: 10em;
+}
+h2{
+    color: #087c71;
+}
+
+p{
+    text-align: justify;
+}
+
+.basico {
+    color: #28a745;
+}
+
+.intermediario {
+    color: #fd7e14;
+}
+
+.avancado{
+    color: #dc3545;
+}
+
+.destaque{
+    background-color: rgba(255, 255, 0, 0.589);
+    font-weight: 600
+}
+
+.negrito{
+    font-weight: 600; /*Negrito*/
+}
+
+
+/*
+    Hierarquia 
+        primeiro os genericos, configuraçoes gerais;
+            Estilo que muda todo os H1
+*/

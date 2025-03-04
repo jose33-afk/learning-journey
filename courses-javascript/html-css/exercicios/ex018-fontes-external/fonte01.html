@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes com Google Fonts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); /*Importando do google*/
+        /*Tudo que começa com @ tem que estar logo apos o style ou no inicio e tem que estar fora de um celetor, celetor é essas {}, body{}, e os comando dentro são declaraçoes, conjuntos entre propriedades e valores*/
+        body{
+             /*shorthan font
+              -font-style -> font-weight -> font-size -> fonte-family*/ 
+            font: 16px Arial, Helvetica, sans-serif
+        }
+
+        h1, h2{
+            font-optical-sizing: auto;
+            font: normal 400 2em "Kaushan Script", sans-serif; /*se não carregar a fonte kaus, vai carregar uma sem serif normal*/
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae non pariatur earum facilis ab natus temporibus magni ea atque eaque cumque, harum, hic consequatur rem quidem recusandae corrupti sequi dicta?</p>
+    <h2>Títolo 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet totam et repellat aspernatur doloribus, neque iste perspiciatis doloremque, alias rem minus ex veniam! Officiis fuga quos ad ut est perspiciatis?</p>
+</body>
+</html>
+
+<!--A propriedade font-optical-sizing no CSS ajusta automaticamente o tamanho óptico da fonte para melhorar a legibilidade, dependendo do tamanho do texto.
+
+Explicação:
+    Quando configurado como auto, ele permite que fontes variáveis (como Roboto) ajustem sua aparência com base no tamanho do texto, tornando-as mais legíveis.
+
+Valores possíveis:
+    auto → Ajusta o design da fonte automaticamente com base no tamanho do texto. (Recomendado para fontes variáveis, como Roboto.)
+    none → Desativa o ajuste óptico, deixando a fonte sem modificações.-->
