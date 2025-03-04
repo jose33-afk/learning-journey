@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        boyd{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div:hover {
+            color: blue;
+        }
+
+        div > p { /*Os paragrafos que estejam dentro de div*/
+            display: none;  /*nao exibir os paragrafos*/
+        }
+
+        div:hover > p { /*Quando passar o mouse */
+            display: block;
+            color: blueviolet;
+            background-color: greenyellow;
+            width: 300px;
+        }
+        /*
+            div > p 
+            Basicamente ta dentro do div
+        */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div> <!--Não da pra por um A ai com link, eu testei não funcionou, talvez tenha um método certo-->
+</body>
+</html>
+
+<!--O que eu entendi do div > p 
+    Basicamente eu configuro somente a tag por;
+
+        div > p {
+            display: none;  /*Aqui ele esconde o paragrafos*/
+        }
+
+        div:hover > p { /*Mas quando eu passar o mouse no paragrafo, ele mostra */
+            display: block;
+            color: blueviolet;
+        }
+
+
+        No div prinicipal, ele só vai mudar a cor do texto "passe o mouse aqui", que ta dentro da div principal
+        ja o outro;
+            div:houver > p o "Texto escondido" ta dentro da tag <p>. e eu configuro a tag <p> usando 
+            div > p, sem alterar a div principal.
+    -->

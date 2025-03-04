@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /*Escreva um programa em C que funcione como uma calculadora. O programa deve apresentar
-um menu ao usuário da seguinte forma:
+um menu ao usuï¿½rio da seguinte forma:
 1 ? Somar
 2 ? Subtrair
 3 ? Multiplicar
@@ -19,11 +19,11 @@ int main() {
            "====================\n"
            " 1 - Somar\n"
            " 2 - Subtrair\n"
-           " 3 - Multiplicaçao\n"
+           " 3 - Multiplicaï¿½ao\n"
            " 4 - Dividir\n"
            " 5 - Sair\n"
            "===================\n"
-           "Digite sua opçao => ");
+           "Digite sua opï¿½ao => ");
     scanf("%i", &esc);
    
     if (esc<=0 || esc>=5){
@@ -42,12 +42,12 @@ int main() {
 
     printf("\nSomente numeros positivos!!\n\n");
     for (c=0; c<=1; c++) {
-        printf("Digite o %iº valor: ", c + 1); //Nao interfere no c++.
+        printf("Digite o %iï¿½ valor: ", c + 1); //Nao interfere no c++.
         scanf("%i", &n[c]);
         if (n[c] == 0) {
-            printf("Não esta disponivel operaçoes com zero!\n");
+            printf("Nï¿½o esta disponivel operaï¿½oes com zero!\n");
             do {
-                printf("Digite o %iº valor:", c + 1);
+                printf("Digite o %iï¿½ valor:", c + 1);
                 scanf("%i", &n[c]);  
                 if (n[c]==0) printf("Erro! digite novamente...\n");
             } while(n[c]==0);
@@ -55,9 +55,9 @@ int main() {
     }
 
     printf("\n-----------------------\n");
-    if (esc==1) printf("Soma: %i + %i = %i.", n[0], n[1], n[0] + n[1]); //Não é possível modificar uma variável diretamente dentro de uma expressão do printf (como n[0] + n[1]), 
-    else if (esc==2) printf("Subritrair: %i - %i = %i", n[0], n[1], n[0] - n[1]); //pois ela é apenas avaliada naquele momento para exibição.
-    else if (esc==3) printf("Multiplicaçao: : %i x %i = %i", n[0], n[1], n[0] * n[1]);
+    if (esc==1) printf("Soma: %i + %i = %i.", n[0], n[1], n[0] + n[1]); //Nï¿½o ï¿½ possï¿½vel modificar uma variï¿½vel diretamente dentro de uma expressï¿½o do printf (como n[0] + n[1]), 
+    else if (esc==2) printf("Subritrair: %i - %i = %i", n[0], n[1], n[0] - n[1]); //pois ela ï¿½ apenas avaliada naquele momento para exibiï¿½ï¿½o.
+    else if (esc==3) printf("Multiplicaï¿½ao: : %i x %i = %i", n[0], n[1], n[0] * n[1]);
     else if (esc==4) printf("Divisao: : %i / %i = %i", n[0], n[1], n[0] / n[1]);
         
     printf("\n-----------------------\n\n"                                                              

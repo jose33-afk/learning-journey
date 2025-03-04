@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'fonte';
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Kaushan+Script&family=Oswald&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font: 16px "Oswald", sans-serif;
+    margin: 0px;
+    background-color: #84E1AD;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.534);    
+}
+
+body h2, section h3{
+    padding-left: 55px;  /*<--*/
+}
+
+body p {
+    padding-left: 25px; /*<--*/
+    padding-right: 25px;
+}
+/*Barra de cima com menus*/
+header{
+    background-image: linear-gradient(to top, #1C643B, #3BD27F);
+    height: 10em;
+    margin-top: 0px;
+    padding-top: 16px;
+}
+
+h1, p{
+    text-align: center; 
+}
+
+h1 {
+    font-weight: 400;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.541);
+    margin-top: 25px;
+}
+
+p{
+    font-size: 14px; /*Tamanho da fonte*/
+    color: aliceblue;
+}
+
+nav ul{ /*menu*/
+    list-style: none; /*Tira as bolinhas*/
+    display: flex; /* Deixa os itens em uma linha */
+    margin-left: -40px;
+}
+
+ul a{
+    font-optical-sizing: auto;
+    color:white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+ul a:hover { /*Houver quando tocar vai ficar rosa*/
+    color: rgb(255, 0, 221);
+}
+
+/*Conteúdo*/
+
+main {
+    background-color: rgb(255, 255, 255);
+    margin-left: 10em;
+    margin-right: 10em; /*margin: top right bottom left;*/
+}
+
+h2, h3 {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.301);  /*Estilo de fonte*/  
+    font: 18px "fonte", sans-serif;
+    color: #134228;
+}
+
+main h2{
+    padding-top: 17px;
+    margin: 0px;
+}
+
+section > p{    
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: 400;
+}
+
+section h3 {
+    font-size: 15px;
+}
+
+section a {
+    color: #3BD27F;
+    text-shadow: none;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.foto{
+    padding-left: 23px;
+}
