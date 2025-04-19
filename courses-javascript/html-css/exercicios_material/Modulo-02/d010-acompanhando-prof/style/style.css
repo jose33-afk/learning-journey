@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Bebas+Neue&family=Kaushan+Script&family=Oswald:wght@500&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url(../fontes/idroid.otf) format('opentype'); /*. ponto pasta atual, ..a pasta anterior*/
+    font-weight: normal;
+}
+
+:root {  /*Meio que uma pasta raiz que funciona pra todo o documento*/
+    --cor0: #c5ebd6; /*Toda varíavel começa com --*/
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'android', sans-serif;
+}
+
+* { /*Configuraçao global para todos os elementos*/
+    margin: 0px;
+    padding: 0px;
+}
+
+a.externo::after { /*after, depois do conteúdo de dentro do a, ele coloca as coisas a baixo*/
+    content: '\00A0\1F517'; /*\00A0\ espaço*/
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 20px; /*ele vai ter no mínimo 150px de autura idependênte da largura da tela*/
+    text-align: center;
+    padding: 20px;
+}
+
+header > h1 {
+    font-weight: normal;
+    color: #ffffff;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 7px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.397);
+
+}
+
+header p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px; /*ele diminui e cresce ate no maximo 500px*/
+    padding-right: 10px;/*quando eu adiciono largura ele vira automaticamente um block, (text-alien não funciona)*/
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.233);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.24);
+    font-weight: bold;
+}
+
+nav a {
+    color: rgba(94, 255, 45, 0.904);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.3s; /*transiçao do hover*/
+}
+
+nav a:hover {
+    background-color: var(--cor0);
+    color: var(--cor5);
+
+}
+
+main {
+    min-width: 300px; /*o main nunca será menor que 300px de largura.*/
+    max-width: 1000px; /*o main nunca será maior que 1000px de largura.*/
+    margin: auto; /*centraliza o main*/
+    background-color: white;
+    padding: 20px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.274); /*->, cima, espalhamento, cor*/
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main  h1, h2{
+    font-weight: normal;
+    color: #1a5c37;
+    font-family: var(--fonte-android);
+    font-size: 1.8em;
+}
+
+main  h2{
+   color: #1a5c37e8;
+   font-size: 1.2em;
+   background-image: linear-gradient(to right, var(--cor1), transparent); /*massa*/
+   padding-left: 8px; /*<--*/
+}
+
+main p {
+    margin: 15px 0px; /*cima, lados*/
+    text-align: justify;
+    text-indent: 30px; /*Aquele espaço da primeira linha do parágrafo*/
+    line-height: 1.5em; /*Aquele espaçamento do word entre uma linha e a de baixo*/
+}
+
+main strong { /*Dá para fazer isso, ele vai aplicar a todos que forem strong*/
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+main a {
+
+    color: #1a5c37;
+    font-weight: bold;
+    background-color: var(--cor1);
+    border-radius: 2px;
+    padding: 3px;
+    text-decoration: none;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: rgba(255, 8, 255, 0.719);
+}
+
+main img {
+    width: 100%; /*Ocupa 100% do main, faz a imagem diminuir ou aumentar de tamanho*/
+}
+
+main img.pequena { /*Um imagem é um inline block!!*/
+    max-width: 350px;
+    /*Propriedade	Comportamento
+    max-width: 350px	Até 350px, mas pode ser menor em telas pequenas
+    width: 350px	Sempre 350px, em qualquer tamanho de tela*/
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    display: flex; /* Transforma em um container flexível */
+    justify-content: center; /* Alinha no centro na horizontal (esquerda ↔ direita) */
+    align-items: center; /* Alinha no centro na vertical (cima ↕ baixo) */
+    background-color: #1a5c37;
+    padding: 15px;
+    margin: 0px -20px 30px -20px;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.212);
+}
+
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding:10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px; /*lados, baixo*/
+}
+
+aside ul {
+    list-style-type: none;
+    list-style-position: inside; /*por a lista pro lado de dentro*/
+    columns: 2; /*Divide a lista em duas partes*/
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 4px;
+    font-weight: 700;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor2);
+    font-weight: 800;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.397);
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgba(255, 8, 255, 0.719);
+}
+
+/*Sai colocando o back-color, cor de letras fontes etc, depois vai organizando e deixando bonitinho*/
