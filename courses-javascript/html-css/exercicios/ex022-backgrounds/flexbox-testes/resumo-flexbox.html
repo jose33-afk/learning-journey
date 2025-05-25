@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo Flex + Absolute</title>
+  <style>
+    body {
+      background: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      position: relative; /* importante para o botão absolute funcionar */
+      width: 300px;
+      height: 200px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .fechar {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .conteudo p {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    .conteudo button {
+      padding: 8px 15px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .conteudo button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <button class="fechar">X</button>
+    <div class="conteudo">
+      <p>Esse é um card centralizado.</p>
+      <button>OK</button>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+<!--✅ Use position: absolute quando quiser:
+Posicionar um item específico em qualquer lugar dentro de um container.
+
+Colocar elementos por cima dos outros (como um botão "fechar", tooltip, ou menu suspenso).
+
+Criar elementos que não seguem o fluxo normal da página.
+
+
+✅ Use Flexbox (display: flex) quando quiser:
+Alinhar vários itens juntos (um ao lado do outro ou um embaixo do outro).
+
+Centralizar horizontal ou verticalmente.
+
+Distribuir o espaço entre elementos de forma inteligente e automática.
+
+Criar menus, barras de navegação, seções com colunas, etc.
+-->

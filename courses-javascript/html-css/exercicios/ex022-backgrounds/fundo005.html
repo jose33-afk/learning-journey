@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de tela</title>
+    <style>
+        body {
+            height: 100vh; /*Tem que por pra configurar o size direito*/
+            background-color: black; /*ter que por por causa do delay de carregamento da imagem de fundo*/
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover; /*Contain faz a imagem sempre ser exibida em 100% ele não corta a imagem
+            Cover faz que a imgame ocupe 100% da view port. ele corta mais fica bom e sem barras laterais*/
+            background-attachment: fixed; /*Se a imagem desce junto com conteúdo ou n*/
+            
+            /*Shorthand - background
+                color > image > position > repeat >  > attachment
+
+               background: black url(imagens/wallpaper002.jpg) center center no-repeat  fixed;
+               background-size: cover; vai por fora
+            */
+        }
+
+        main {
+            background-color: white;
+            max-width: 400px; /*O conteúdo fica com no máximo 400px idenpedente do tamanho da tela*/
+            padding: 10px;
+            margin: auto;
+            border:2px solid darkblue;
+            border-radius: 15px;
+
+        }
+
+        p {
+            width: 100%; /*O paragráfo vai ocupar 100% do main*/
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de fundo</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam saepe molestiae eum ducimus facere a quaerat
+             labore molestias, perferendis sapiente aperiam voluptates minus deserunt numquam ipsam? Nesciunt, commodi id?
+            Mollitia voluptas delectus unde nemo incidunt quo accusamus dolorem iure quaerat et alias id laudantium consectetur
+             est officiis, reiciendis quibusdam quia accusantium, velit aliquid facilis culpa odit. Officia, quis dolor?
+            Similique doloribus doloremque cupiditate explicabo distinctio, labore vero sunt veritatis unde voluptate aliquid
+            temporibus possimus dolor tempora rem, ab nesciunt, qui minima consectetur? Blanditiis pariatur temporibus unde, quis nemo natus?
+        </p>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam saepe molestiae eum ducimus facere a quaerat
+             labore molestias, perferendis sapiente aperiam voluptates minus deserunt numquam ipsam? Nesciunt, commodi id?
+            Mollitia voluptas delectus unde nemo incidunt quo accusamus dolorem iure quaerat et alias id laudantium consectetur
+             est officiis, reiciendis quibusdam quia accusantium, velit aliquid facilis culpa odit. Officia, quis dolor?
+            Similique doloribus doloremque cupiditate explicabo distinctio, labore vero sunt veritatis unde voluptate aliquid
+            temporibus possimus dolor tempora rem, ab nesciunt, qui minima consectetur? Blanditiis pariatur temporibus unde, quis nemo natus?
+        </p>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam saepe molestiae eum ducimus facere a quaerat
+             labore molestias, perferendis sapiente aperiam voluptates minus deserunt numquam ipsam? Nesciunt, commodi id?
+            Mollitia voluptas delectus unde nemo incidunt quo accusamus dolorem iure quaerat et alias id laudantium consectetur
+             est officiis, reiciendis quibusdam quia accusantium, velit aliquid facilis culpa odit. Officia, quis dolor?
+            Similique doloribus doloremque cupiditate explicabo distinctio, labore vero sunt veritatis unde voluptate aliquid
+            temporibus possimus dolor tempora rem, ab nesciunt, qui minima consectetur? Blanditiis pariatur temporibus unde, quis nemo natus?
+        </p>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam saepe molestiae eum ducimus facere a quaerat
+             labore molestias, perferendis sapiente aperiam voluptates minus deserunt numquam ipsam? Nesciunt, commodi id?
+            Mollitia voluptas delectus unde nemo incidunt quo accusamus dolorem iure quaerat et alias id laudantium consectetur
+             est officiis, reiciendis quibusdam quia accusantium, velit aliquid facilis culpa odit. Officia, quis dolor?
+            Similique doloribus doloremque cupiditate explicabo distinctio, labore vero sunt veritatis unde voluptate aliquid
+            temporibus possimus dolor tempora rem, ab nesciunt, qui minima consectetur? Blanditiis pariatur temporibus unde, quis nemo natus?
+        </p>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam saepe molestiae eum ducimus facere a quaerat
+             labore molestias, perferendis sapiente aperiam voluptates minus deserunt numquam ipsam? Nesciunt, commodi id?
+            Mollitia voluptas delectus unde nemo incidunt quo accusamus dolorem iure quaerat et alias id laudantium consectetur
+             est officiis, reiciendis quibusdam quia accusantium, velit aliquid facilis culpa odit. Officia, quis dolor?
+            Similique doloribus doloremque cupiditate explicabo distinctio, labore vero sunt veritatis unde voluptate aliquid
+            temporibus possimus dolor tempora rem, ab nesciunt, qui minima consectetur? Blanditiis pariatur temporibus unde, quis nemo natus?
+        </p>
+    </main>
+</body>
+</html>

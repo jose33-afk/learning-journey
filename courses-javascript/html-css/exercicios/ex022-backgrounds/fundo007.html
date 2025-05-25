@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        /*Centralizar <-----> bom usa o flex é mais facil*/
+        #container {
+            position: relative; /*Quem ta contendo tem que ter o posicionamento relativo*/
+            height: 90vh; /*Tamanho da tela*/
+            background-color: purple;
+            padding: 10px;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+        }
+
+        #conteudo {
+            position: absolute; /*E quem ta dentro o asobluto*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%; /*Altura/largura de preenchimento*/
+
+            left: 50%; /*centraliza na metade*/
+            top: 50%; /*Ja o de baixo concerta pra n ficar nem pra um lado nem para o outro e sim no centro*/
+            transform: translate(-50%, -50%); /* --> Segundo de cima pra baixo ou negativo ele vai pro lado contrario, Mexe na posiçao da box*/
+        }
+
+        /*position: relative
+          O elemento continua ocupando seu espaço normal no layout.
+          Mas você pode mover ele em relação a essa posição original usando top, left, right ou bottom
+          -------------
+           position: absolute
+           elemento sai do fluxo normal da página, como se estivesse flutuando.
+           Ele é posicionado em relação ao elemento pai mais próximo que tenha position: relative (ou ao <body> se nenhum pai tiver posição definida).*/
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo"> 
+
+        </article>
+    </section>
+</body>
+</html>
+
+
+<!-- Resumo: você usa absolute quando quer posicionar algo de forma exata dentro de um container.
+    Resumo: você usa Flexbox para alinhar, distribuir e organizar os itens dentro de um container.-->

@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    background-color: rgba(11, 198, 223, 0.705);
+    background-image: url(imagens/espaco.jpg);
+    background-size: cover;
+}
+
+#img {
+    height: 300px;
+    width: 300px;
+    background-image: url(imagens/astronauta.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Quando você usa display: flex na div principal (ou body), você está dizendo:
+“Quero controlar o alinhamento dos elementos filhos que estão dentro dela.”
+Ou seja:
+Se você coloca display: flex no body, você controla o alinhamento das divs que estão dentro do body.
+Se você colocasse display: flex dentro da #img, aí estaria controlando o alinhamento do que está dentro
+ dela (por exemplo, textos ou imagens internas).
+Então o segredo é sempre pensar:
+“O que eu quero alinhar? Então o flex vai no contêiner pai desse elemento.”*/

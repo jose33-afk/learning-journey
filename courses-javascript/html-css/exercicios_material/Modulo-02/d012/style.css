@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Courgette&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --azul: rgba(33, 33, 243, 0.89);
+    --preto: rgb(0, 0, 0);
+    --branco: rgb(255, 255, 255);
+
+    --fonte-titolo: "Alfa Slab One", serif;
+    --fonte-poema: "Courgette", cursive;
+    --fonte-padrao: "Inter", sans-serif;
+}
+/*743px é o minimo*/
+* {
+    margin: 0px; 
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+}
+
+
+header {
+    text-align: center;
+    background-color: var(--preto);
+}
+
+header > h1 {
+    font-size: 4em;
+    font-family: var(--fonte-titolo);
+    font-weight: 300;
+    color: var(--branco);
+
+    padding-top: 20px;
+}
+
+header > p{
+    color: var(--branco);
+    padding-bottom: 20px;
+}
+
+header > p > a {
+    color: var(--azul);
+    text-decoration: none;
+    font-family: var(--fonte-titolo);
+}
+
+/*section padrão*/
+main {
+    background-color: rgb(255, 255, 255);
+    min-width: 300px;
+}
+
+section {
+    height: auto;
+    max-width: 600px;
+    margin-left: 30px;
+
+}
+
+section > p, .para{
+    font-family: var(--fonte-poema);
+    font-weight: 500;
+    font-size: clamp(1rem, 5vw, 3.1em); /*clamp(valor mínimo, valor ideal, valor máximo)*/
+    /*1rem tamanho minimo permitido, 5vw, cresce com 5% da largura da tela, e 3.1em tamanho maximo*/
+    text-align: justify;
+
+    overflow-wrap: break-word; /* quebra a linha se passar */
+    padding: 40px;
+}
+
+ p {
+    width: 100%;
+}
+
+/*section com imagem*/
+
+.img1, .img2{
+    display: flex;
+    align-items: center; /*O center o valor posiciona os itens flexíveis no meio do contêiner:*/
+    margin: 0px;
+    height: 700px;
+    width: 100%;
+
+    background-size: cover; 
+}
+
+.img1 {
+    background-image: url(imagens/background001.jpg);
+}
+
+.img2 {
+    background-image: url(imagens/background002.jpg);
+}
+
+.para { /*Background dos paragráfo*/
+    margin-left: 30px;
+    padding: 30px 10px;
+    height: 452px;
+    width: 600px;
+
+    color: var(--branco);
+    background-color: rgba(0, 0, 0, 0.13);
+} 
+
+/*Footer*/
+footer {
+    text-align: center;
+    margin-top: 55px;
+    padding: 20px;
+    background-color: var(--preto);
+}
+
+footer > p {
+    font-size: 1.3em;
+    color: var(--branco);
+}
+
+footer p > a {
+    text-decoration: none;
+}
