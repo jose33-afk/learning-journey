@@ -5,22 +5,30 @@
 :root {
     --azul: rgba(33, 33, 243, 0.89);
     --preto: rgb(0, 0, 0);
-    --branco: rgb(255, 255, 255);
+    --branco-text: rgb(255, 255, 255);
 
     --fonte-titolo: "Alfa Slab One", serif;
     --fonte-poema: "Courgette", cursive;
     --fonte-padrao: "Inter", sans-serif;
 }
-/*743px é o minimo*/
+
 * {
     margin: 0px; 
     padding: 0px;
+    box-sizing: border-box;
 }
 
-body {
+html, body { 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     font-family: var(--fonte-padrao);
 }
 
+
+a { /*Todos os links*/
+    text-decoration: none;
+}
 
 header {
     text-align: center;
@@ -28,96 +36,92 @@ header {
 }
 
 header > h1 {
-    font-size: 4em;
+    font-size: clamp(1em, 5vw, 4em);
     font-family: var(--fonte-titolo);
     font-weight: 300;
-    color: var(--branco);
-
+    color: var(--branco-text);
     padding-top: 20px;
 }
 
 header > p{
-    color: var(--branco);
+    font-size:  clamp(1em, 3vw, 1.5em); /*Valor mínimo, aqui tem que ir configurando uma largura boa pra n passar de 1.5 com tela cheia*/
+    color: var(--branco-text);
     padding-bottom: 20px;
+    /* 
+        Regra de ouro para clamp() com vw:
+        Se o texto vive travado no mínimo → o vw está muito pequeno
+        Se o texto vive travado no máximo → o vw está muito grande
+    */
+
 }
 
-header > p > a {
-    color: var(--azul);
-    text-decoration: none;
-    font-family: var(--fonte-titolo);
-}
-
-/*section padrão*/
 main {
+    flex: 1;
     background-color: rgb(255, 255, 255);
-    min-width: 300px;
 }
 
-section {
-    height: auto;
-    max-width: 600px;
-    margin-left: 30px;
-
-}
-
-section > p, .para{
+article > section  {
+    font-size: clamp(1em, 3vw, 3em);
     font-family: var(--fonte-poema);
-    font-weight: 500;
-    font-size: clamp(1rem, 5vw, 3.1em); /*clamp(valor mínimo, valor ideal, valor máximo)*/
-    /*1rem tamanho minimo permitido, 5vw, cresce com 5% da largura da tela, e 3.1em tamanho maximo*/
-    text-align: justify;
-
-    overflow-wrap: break-word; /* quebra a linha se passar */
-    padding: 40px;
+    
+    min-width: 100px;
+    max-width: 700px;
+    padding: 3vw 1vw;
 }
 
- p {
-    width: 100%;
+article > p {
+    width: 97%;
 }
 
-/*section com imagem*/
-
-.img1, .img2{
-    display: flex;
-    align-items: center; /*O center o valor posiciona os itens flexíveis no meio do contêiner:*/
-    margin: 0px;
-    height: 700px;
-    width: 100%;
-
-    background-size: cover; 
+/*Background com imagem*/
+#image-poema1 {
+   background-image: url(imagens/background001.jpg);
 }
 
-.img1 {
-    background-image: url(imagens/background001.jpg);
-}
-
-.img2 {
+#image-poema2 {
     background-image: url(imagens/background002.jpg);
 }
 
-.para { /*Background dos paragráfo*/
-    margin-left: 30px;
-    padding: 30px 10px;
-    height: 452px;
-    width: 600px;
+#image-poema1, #image-poema2 {
+    display: flex;
+    align-items: center;
 
-    color: var(--branco);
-    background-color: rgba(0, 0, 0, 0.13);
-} 
+    font-size: clamp(1em, 3vw, 3em);
+    font-family: var(--fonte-poema);
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 32vw ; /* Usando max-height Se o conteúdo não for grande o suficiente ele não cresce mais*/
+    width: 100%;
+}
+
+article > div > p {
+    color: var(--branco-text);
+    background-color: rgba(0, 0, 0, 0.212);
+
+    padding: 4vw 1vw;
+    min-width: 50px;
+    max-width: 700px;
+}
 
 /*Footer*/
-footer {
-    text-align: center;
-    margin-top: 55px;
-    padding: 20px;
-    background-color: var(--preto);
-}
 
 footer > p {
-    font-size: 1.3em;
-    color: var(--branco);
+    text-align: center;
+    background-color: var(--preto);
+    padding: 5px;
+    font-size:  clamp(1em, 3vw,1.5em);
+    color: var(--branco-text);
 }
 
-footer p > a {
-    text-decoration: none;
-}
+/*Código	Significado
+box-sizing: border-box;	Inclui padding e border dentro do width e height. Mais controle.
+
+html, body { height: 100% }	Faz o corpo da página ocupar toda a altura da tela.
+
+display: flex;	Torna os elementos filhos flexíveis (layout com distribuição automática).
+
+main { flex: 1 }	Faz o main crescer e ocupar o espaço entre o header e footer.
+*/
