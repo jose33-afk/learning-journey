@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: var(--fonte1);
+    min-height: 100vh; /*Sempre por.*/
+    background-color: gray;
+}
+
+header {
+    background-color: black;
+    color: white; /*cor da fonte*/
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 5.2vw; /*Não é a melhor maneira*/
+    font-family: var(--fonte2);
+    padding-top: 50px;
+    /*text-transform: uppercase; /*Deixa as letras maiúculas e minusculas, ect*/
+    font-variant: small-caps; /*Deixa maiusculas, mas deixa a primeira letra maior*/
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a { /*TODOS OS LINKS*/
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline; /*Vai voltar a linha quando eu passar o mouse*/
+}
+
+section {
+    font-size: 3vw;
+    font-family: var(--fonte3);
+    padding-top: 10vh;
+    padding-bottom: 10vw;
+    line-height: 2em; /*Espaço entra a linha de baixa e a de cima */
+    padding-left: 30px;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-size: cover;
+    background-color: rgb(92, 87, 87);
+    color:  white;
+    box-shadow: inset 5px 5px 12px 0px rgba(0, 0, 0, 0.493); /*sombra pra dentro*/
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    text-shadow: 1px 1px 0px black; /*Esqueci de por no meu*/
+    width: 400px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
