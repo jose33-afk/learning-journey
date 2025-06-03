@@ -1,0 +1,13 @@
+Passo - 0 
+    Fazer o templete para não quebrar muito
+    A cabeça na organizaçao das caixas.
+
+Passo 1 -
+    Colar o conteúdo no HTML
+    Ir configurando oq é section, man, header, a,
+    etc.
+
+Passo 2 - Css
+    Configura as caixas com background
+    para saber quem ta dentro de quem e 
+    ir fazendo os ajustes.
