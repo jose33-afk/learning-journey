@@ -10,15 +10,8 @@
         }
 
         table {
-            margin: auto;
-          
-            width: 27vw;/*Quanto mais grande mais espaço entre as colunas*/
+            width: 500px; /*Quanto mais grande mais espaço entre as colunas*/
             border-collapse: collapse; /*Tem que por no table*/
-        }
-
-        tbody tr:hover {
-            font-weight: bold;
-            color: rgb(22, 94, 34);
         }
 
         caption {
@@ -32,8 +25,23 @@
             padding: 5px;
             background-color: rgb(26, 24, 24);
             color: white;
+            position: relative; /*Passo 1, fixar legenda da tabela*/
         }
 
+        thead > tr > th {
+            position: sticky;  /*Passo 2, fixar legenda da tabela*/
+            top: -1px;  /*Passo 3, fixar legenda da tabela*/
+            background-color: black; /*Precisa por pq só vai fixar as palavras*/
+            padding: 5px;
+        }
+
+        tbody > tr:nth-child(odd) { /*Aplica o Background em 1 linha 2 -1. ou odd ele vai deixar so a celulas impares ou even par*/
+            background-color: grey;
+        }
+
+        tbody > tr:nth-child(even) { /*2n*/
+            background-color: rgba(255, 255, 255, 0.377);
+        }
         td, th {
             border: 1px solid black;
         }
@@ -51,11 +59,6 @@
             background-color: green;
             color: white; /*Color é a cor da letra*/
         }
-
-        tfoot > tr:hover {
-            background-color: rgba(255, 0, 0, 0.719);
-        }
-
     </Style>
 </head>
 <body>
@@ -74,9 +77,11 @@
     <table>
         <caption>Populaçao das Unidades Federativas</caption>
         <thead>
-            <th scope="col" style="width: 25px;">Posiçao</th> <!--Largura da coluna, tem que ir ajustando com a largura do table-->
-            <th scope="col">Estado</th> <!-- "TH" definir os títulos das colunas ou linhas-->
-            <th scope="col" style="width: 110px;">Populaçao</th> <!--col os dados estão abaixo do titolo-->
+            <tr>
+                <th scope="col" style="width: 25px;">Posiçao</th> <!--Largura da coluna, tem que ir ajustando com a largura do table-->
+                <th scope="col">Estado</th> <!-- "TH" definir os títulos das colunas ou linhas-->
+                <th scope="col" style="width: 110px;">Populaçao</th> <!--col os dados estão abaixo do titolo-->
+            </tr>
         </thead>
             
         <tbody>
@@ -203,7 +208,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th scope="row" colspan="2">Total de Habitantes</th> <!--Row os items estão na mesma linha-->
+                <td></td> <!--Só TÍTolos-->
+                <th scope="row">Total de Habitantes</th> <!--Row os items estão na mesma linha-->
                 <td class="numero"><strong>212 583 750</strong></td>
             </tr>    
         </tfoot>
