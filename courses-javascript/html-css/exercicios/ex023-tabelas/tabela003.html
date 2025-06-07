@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mescragem de células</h1> 
+</body>
+    <table>
+        <tr>
+          
+            <td colspan="3">B</td> <!--B ocupando duas colunas expande para os dois lados-->
+            
+        </tr>
+        <tr>
+            <td >D</td>
+            <td>E</td>
+            <td rowspan="2">F</td> <!--linhas e expande só pra baixo-->
+        </tr>
+        <tr>
+            
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+           
+            <td>L</td>
+            <td colspan="2">M</td> 
+        </tr>
+    </table>
+</html>
