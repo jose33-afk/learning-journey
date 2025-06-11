@@ -39,13 +39,19 @@
             <tr>
                 <th scope="col">Grupo</th>
                 <th scope="col">Nomes</th>
-                <th scope="col" colspan="3">Fimes</th>
+                <th scope="colgroup" colspan="3">Fimes</th> <!--Porque abaxio de filmes tem três colunas e não 1-->>
             </tr>
         </thead>
 
+        <tfoot>
+            <tr>
+                <th colspan="4"  scope="row">Total</th> <!--O scope so nos th que são títolos-->
+                <td>1000</td>
+            </tr>
+        </tfoot>
         <tbody>
             <tr>
-                <td rowspan="3"><strong>Mulheres</stong></td>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -67,7 +73,7 @@
             </tr>
 
             <tr>
-                <td rowspan="3"><strong>Homens</strong></td>
+                <th scope="rowgroup" rowspan="3">Homens</th>
                 <td>Bruno mendonça</td>
                 <td>Intócaveis</td>
                 <td>Amnésia</td>
