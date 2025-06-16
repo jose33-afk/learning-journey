@@ -9,26 +9,45 @@
     padding: 0px;
 }
 
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
 body {
     display: flex;
     flex-direction: row-reverse;
 
-    background-image: url(imagens/fundo-madeira.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: url(imagens/fundo-madeira.jpg) no-repeat fixed;
+    background-size: cover;
 }
 
-nav > div {
-    border-radius: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.267);
-    background-size: cover;
+nav {
+    display: flex;
+    flex-direction: column;
+}
 
-    width: clamp(40px, 5vw, 100px); /*Minimo, ideal, tela grande*/
-    height: clamp(40px, 5vw, 100px);
+nav > a {
+    width: clamp(63px, 6vw, 110px); /*Minimo, ideal, tela grande usar o devtools pra ajustar*/
+    height: clamp(63px, 6vw, 110px);
+    margin: 15px;
+    
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.473);  
+    box-sizing: border-box;  /*Sem isso fica todo bugado mechendo tudo*/
+}
+
+nav > a:hover {
+    border:2px solid rgba(255, 255, 255, 0.048);
+    transform: translate(-5px, -5px); /*Pro botao subir quando for clicado*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.418); /*Pra sombra n ficar bugada*/
+    transition: 0.4s, border 0.5s; /*A borda do a vai paparecer dps de 0.7s*/
 }
 
 #home {
     background-image: url(imagens/logo-home.jpg);
+
 }
 
 #yt {
@@ -62,12 +81,20 @@ main {
 
 
 #celular {
+    position: absolute;
     height: 627px;
-    width: 311px; 
-    background-image: url(imagens/frame-iphone.png); 
+    width: 311px;
+    background-image: url(imagens/frame-iphone.png);
 }
 
-#celular > iframe {
-    width: 100px;
-    height: 500px;
+#celular > iframe { /*Não só usar o flexbox existe o relative*/
+    position: relative;
+    height: 471px;
+    top: 80px;
+    left: 22px;
+    width: 267px;
+}
+
+iframe::-webkit-scrollbar {
+    display: none;
 }
