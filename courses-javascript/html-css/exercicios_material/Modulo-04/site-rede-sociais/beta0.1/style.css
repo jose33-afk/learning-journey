@@ -28,10 +28,9 @@ nav {
 }
 
 nav > a {
-    width: clamp(63px, 6vw, 110px); /*Minimo, ideal, tela grande usar o devtools pra ajustar*/
-    height: clamp(63px, 6vw, 110px);
-    margin: 15px;
-    
+    height: 70px;
+    width: 70px;
+    margin: 10px;
     border-radius: 50%;
     background-size: cover;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.473);  
@@ -93,8 +92,4 @@ main {
     top: 80px;
     left: 22px;
     width: 267px;
-}
-
-iframe::-webkit-scrollbar {
-    display: none;
 }
