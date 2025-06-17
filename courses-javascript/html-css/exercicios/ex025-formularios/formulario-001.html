@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formúlario</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formúlario</h1>
+    <form action="cadastro.php"  autocomplete="off" method="post" > <!--Sugestao de nome ja escrito anteriormente-->
+        <!--Action pra onde vai enviar os dados depois de enviar, o submite faz o resto-->
+        <p>
+            <label for="inome">Nome:</label> <!--Pro navegador saber que o nome esta relacionado ao inpute abaixo-->
+            <input type="text" name="nome" id="inome">
+        </p> <!--input == aquela caxinha pra responder-->
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p> <!--Caixinha de enviar os dados, no value pode por qualquer coisa-->
+    </form>
+
+    <!--Quando enviar dados por get(padrao), consegue mandar somente 3bytes, 3 mil letra
+    Nao usar pra enviar dados sensiveis 
+    senhas, cartao cep 
+    envio, 
+    post;
+     arquivos fotos etc-->
+</body>
+</html>
