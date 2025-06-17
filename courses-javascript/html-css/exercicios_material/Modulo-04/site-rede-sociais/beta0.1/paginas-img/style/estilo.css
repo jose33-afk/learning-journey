@@ -1,0 +1,36 @@
+* {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ::-webkit-scrollbar { /*era pra esconder aqui e n no iframe*/
+            width: 0px;
+            height: 0px;
+        }
+
+        img {
+            display: block; /*Se nao por a imagem n empura o link pra baixo*/
+            width: 100vw;
+        }
+
+        a {
+            font-size: medium;
+            display: block;
+            padding:2vw;
+            text-align: center;
+            background-color: rgb(255, 72, 0);
+            width: 100%;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            box-shadow: 2px 2px 1px black;
+        }
+        
+        a:hover {
+            color: blue;
+          
+
+        }
